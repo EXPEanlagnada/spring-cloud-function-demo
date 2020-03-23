@@ -1,22 +1,14 @@
-package com.kapresoft.demo;
+package com.kapresoft.demo
 
-public class FindMovieRequest {
+class FindMovieRequest {
 
-    private String characterName;
+    var characterName: String? = null
 
-    public String getCharacterName() {
-        return characterName;
+    override fun toString(): String {
+        val sb = StringBuilder("FindMovieRequest{")
+        sb.append("characterName='").append(characterName).append('\'')
+        sb.append('}')
+        return sb.toString()
     }
 
-    public void setCharacterName(String characterName) {
-        this.characterName = characterName;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("FindMovieRequest{");
-        sb.append("characterName='").append(characterName).append('\'');
-        sb.append('}');
-        return sb.toString();
-    }
 }

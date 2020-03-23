@@ -1,19 +1,20 @@
-package com.kapresoft.demo;
+package com.kapresoft.demo
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory
 
-public class MovieFinder {
+class MovieFinder {
 
-    private static final Logger log = LoggerFactory.getLogger(MovieFinder.class);
-
-    public MovieInfo findCharacterFromMovie(String characterName) {
-        final MovieInfo movieInfo = new MovieInfo();
-        movieInfo.setCharacterName(characterName);
-        movieInfo.setMovieName("The Princess Pride");
-        movieInfo.setYear("1987");
-        movieInfo.setUrl("https://www.imdb.com/title/tt0093779/");
-        return movieInfo;
+    fun findCharacterFromMovie(characterName: String?): MovieInfo {
+        log.debug("Finding movie for character name: {}", characterName)
+        val movieInfo = MovieInfo()
+        movieInfo.characterName = characterName
+        movieInfo.movieName = "The Princess Pride"
+        movieInfo.year = "1987"
+        movieInfo.url = "https://www.imdb.com/title/tt0093779/"
+        return movieInfo
     }
 
+    companion object {
+        private val log = LoggerFactory.getLogger(MovieFinder::class.java)
+    }
 }

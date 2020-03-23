@@ -1,13 +1,13 @@
-package com.kapresoft.demo;
+package com.kapresoft.demo
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ApplicationTest {
+internal class ApplicationTest {
 
     @Test
-    void contextLoads() {
+    fun contextLoads() {
     }
 
 }
