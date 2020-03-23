@@ -1,0 +1,14 @@
+application:
+  title: "Spring Cloud Function Demo"
+  version: @project.version@
+
+spring:
+  application:
+    name: ${application.title}
+
+logging:
+  level:
+    root: info
+    org.springframework: warn
+    org.springframework.boot: warn
+    com.example.demo: info

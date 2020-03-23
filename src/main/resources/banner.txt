@@ -1,0 +1,7 @@
+${AnsiColor.YELLOW}--------------------------------------------${AnsiColor.BLACK}
+${application.title}
+
+::   application.version  :: ${application.version:}
+::   spring-boot.version  :: ${spring-boot.formatted-version}
+:: spring.profiles.active :: ${spring.profiles.active:}
+${AnsiColor.YELLOW}--------------------------------------------
