@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.kapresoft.demo;
 
 public class MovieInfo {
 
