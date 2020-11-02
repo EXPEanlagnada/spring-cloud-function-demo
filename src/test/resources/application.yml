@@ -6,11 +6,11 @@ spring:
   application:
     name: ${application.title}
   profiles:
-    active: test
+    active: build
 
 logging:
   level:
     root: info
     org.springframework: warn
     ch.qos.logback: warn
-    com.kapresoft.demo: info
+    com.kapresoft.demo: debug
