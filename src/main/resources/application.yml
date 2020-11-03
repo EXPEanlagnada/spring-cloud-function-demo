@@ -13,4 +13,4 @@ logging:
     root: info
     org.springframework: warn
     org.springframework.boot: warn
-    com.kapresoft.demo: info
+    com.kapresoft.demo: debug

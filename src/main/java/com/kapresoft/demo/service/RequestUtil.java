@@ -11,6 +11,10 @@ public class RequestUtil {
 
     private ObjectMapper mapper;
 
+    public RequestUtil() {
+        this(new ObjectMapper());
+    }
+
     public RequestUtil(ObjectMapper mapper) {
         this.mapper = mapper;
     }

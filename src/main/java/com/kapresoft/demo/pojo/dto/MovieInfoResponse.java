@@ -5,7 +5,7 @@ import lombok.Value;
 
 @Value
 @Builder
-public class MovieInfo {
+public class MovieInfoResponse {
 
     String characterName;
     String movieName;
