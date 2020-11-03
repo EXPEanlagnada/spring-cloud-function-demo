@@ -28,20 +28,20 @@ function uploadAndDeployS3() {
     eval ${cmd}
 
     echo "Updating lambda function..."
-    local cmd="aws lambda update-function-code \
-            --region ${s3Region} \
-            --function-name ${basename} \
-            --s3-bucket ${s3Bucket} --s3-key ${s3Key}"
+    local cmd="aws lambda update-function-code"
+    cmd="${cmd} --region ${s3Region}"
+    cmd="${cmd} --function-name ${basename}"
+    cmd="${cmd} --s3-bucket ${s3Bucket} --s3-key ${s3Key}"
     echo Executing: ${cmd}
     eval ${cmd}
 }
 
 function deployLocalFile() {
     echo "Updating lambda function..."
-    local cmd="aws lambda update-function-code \
-            --region ${s3Region} \
-            --function-name ${basename} \
-            --zip-file fileb://target/${archive}"
+    local cmd="aws lambda update-function-code"
+    cmd="${cmd} --region ${s3Region}"
+    cmd="${cmd} --function-name ${basename}"
+    cmd="${cmd} --zip-file fileb://target/${archive}"
     echo Executing: ${cmd}
     eval ${cmd}
 }

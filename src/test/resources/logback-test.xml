@@ -14,10 +14,10 @@
     <logger name="org.springframework" level="warn" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
-    <logger name="com.kapresoft" level="debug" additivity="false">
+    <logger name="com.kapresoft" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
-    <root level="error">
+    <root level="ERROR">
         <appender-ref ref="CONSOLE"/>
     </root>
 

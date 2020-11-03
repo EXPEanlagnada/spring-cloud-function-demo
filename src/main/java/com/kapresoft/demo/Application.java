@@ -1,12 +1,12 @@
 package com.kapresoft.demo;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.fn.MovieRequestFunction;
-import com.kapresoft.demo.fn.SongRequestFunction;
+import com.kapresoft.demo.fn.FindMovieRequestFunction;
+import com.kapresoft.demo.fn.FindSongRequestFunction;
 import com.kapresoft.demo.pojo.dto.FindMovieRequest;
 import com.kapresoft.demo.pojo.dto.FindSongRequest;
 import com.kapresoft.demo.pojo.dto.MovieInfoResponse;
 import com.kapresoft.demo.pojo.dto.SongInfoResponse;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -25,12 +25,22 @@ public class Application {
 
     @Bean
     Function<FindMovieRequest, MovieInfoResponse> findMovie() {
-        return new MovieRequestFunction();
+        return new FindMovieRequestFunction();
     }
 
     @Bean
     Function<FindSongRequest, SongInfoResponse> findSong() {
-        return new SongRequestFunction();
+        return new FindSongRequestFunction();
     }
+
+//    @Bean
+//    Function<Flux<FindMovieRequest>, Flux<MovieInfoResponse>> findMovie() {
+//        return flux -> flux.map(new MovieRequestFunction());
+//    }
+//
+//    @Bean
+//    Function<Flux<FindSongRequest>, Flux<SongInfoResponse>> findSong() {
+//        return flux -> flux.map(new SongRequestFunction());
+//    }
 
 }

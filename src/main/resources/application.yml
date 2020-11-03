@@ -7,7 +7,9 @@ spring:
     name: ${application.title}
   profiles:
     active: dev
-
+  cloud:
+    function:
+      definition: findMovie|findSong
 logging:
   level:
     root: info
