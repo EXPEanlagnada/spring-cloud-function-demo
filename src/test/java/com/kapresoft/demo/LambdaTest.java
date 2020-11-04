@@ -44,8 +44,6 @@ class LambdaTest {
 
     @Test
     void findMovieRequest() throws IOException {
-        assertThat(true).as("Test Failure").isFalse();
-
         val lambda = createLambda("findMovie");
 
         val requestInputStream = resourceLoader.getResource("classpath:findMovieRequest.json").getInputStream();
