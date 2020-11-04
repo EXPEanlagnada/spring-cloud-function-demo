@@ -1,3 +1,5 @@
+![CI](https://github.com/kapresoft/spring-cloud-function-demo/workflows/CI/badge.svg)
+
 # spring-cloud-function-demo
 
 Spring Cloud Function Demo with AWS Lambda
