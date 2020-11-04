@@ -7,10 +7,12 @@ spring:
     name: ${application.title}
   profiles:
     active: dev
-
+  cloud:
+    function:
+      definition: findMovie|findSong
 logging:
   level:
     root: info
     org.springframework: warn
     org.springframework.boot: warn
-    com.kapresoft.demo: info
+    com.kapresoft.demo: debug

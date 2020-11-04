@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "characterName": "Frodo"
+  },
+  "headers": {
+    "spring.cloud.function.definition": "findMovie",
+    "hello": "there",
+    "id": "51f13a9e-8628-8a79-06e8-ee91069e3399",
+    "first": "name",
+    "timestamp": 1604429628263
+  }
+}
