@@ -17,7 +17,6 @@ import org.springframework.core.io.DefaultResourceLoader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import static com.kapresoft.demo.fn.FindMovieRequestFunction.INIGO_MONTOYA_CHARACTER;

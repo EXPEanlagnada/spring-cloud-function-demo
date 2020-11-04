@@ -9,10 +9,13 @@ spring:
     active: dev
   cloud:
     function:
-      definition: findMovie|findSong
+      #definition: reverse|uppercase
+      #definition: findSong
+      #definition: findMovie
+      definition: customRouter
 logging:
   level:
-    root: info
+    root: warn
     org.springframework: warn
     org.springframework.boot: warn
     com.kapresoft.demo: debug
