@@ -71,7 +71,7 @@ public class CustomRouterFunction implements Function<Message<Object>, Object> {
         try {
             return ofNullable(objectMapper.readValue(payload.toString(), targetType));
         } catch (JsonProcessingException e) {
-            log.info("Payload is not of type: {}", targetType);
+            log.warn("Payload is not of type: {}", targetType);
         }
         return empty();
     }
