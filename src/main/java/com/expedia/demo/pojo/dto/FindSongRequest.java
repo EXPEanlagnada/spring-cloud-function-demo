@@ -1,4 +1,4 @@
-package com.kapresoft.demo.pojo.dto;
+package com.expedia.demo.pojo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,8 +12,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @AllArgsConstructor
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = false)
-public class FindMovieRequest {
+public class FindSongRequest {
 
-    String characterName;
+    String lyrics;
 
 }

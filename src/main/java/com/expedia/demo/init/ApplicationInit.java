@@ -1,4 +1,4 @@
-package com.kapresoft.demo.init;
+package com.expedia.demo.init;
 
 import lombok.val;
 

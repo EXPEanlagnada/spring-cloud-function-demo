@@ -1,4 +1,4 @@
-package com.kapresoft.demo;
+package com.expedia.demo;
 
 import org.springframework.cloud.function.adapter.aws.FunctionInvoker;
 import org.springframework.cloud.function.adapter.aws.SpringBootStreamHandler;

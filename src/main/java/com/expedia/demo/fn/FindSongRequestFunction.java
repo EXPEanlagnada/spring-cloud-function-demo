@@ -1,9 +1,9 @@
-package com.kapresoft.demo.fn;
+package com.expedia.demo.fn;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.pojo.dto.FindSongRequest;
-import com.kapresoft.demo.pojo.dto.SongInfoResponse;
-import com.kapresoft.demo.service.RequestUtil;
+import com.expedia.demo.pojo.dto.FindSongRequest;
+import com.expedia.demo.pojo.dto.SongInfoResponse;
+import com.expedia.demo.service.RequestUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.function.Function;

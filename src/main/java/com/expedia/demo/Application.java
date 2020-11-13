@@ -1,15 +1,17 @@
-package com.kapresoft.demo;
+package com.expedia.demo;
+
+import com.expedia.demo.fn.CustomRouterFunction;
+import com.expedia.demo.fn.FindMovieRequestFunction;
+import com.expedia.demo.fn.FindSongRequestFunction;
+import com.expedia.demo.pojo.dto.FindMovieRequest;
+import com.expedia.demo.pojo.dto.FindSongRequest;
 
 import lombok.extern.slf4j.Slf4j;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.fn.CustomRouterFunction;
-import com.kapresoft.demo.fn.FindMovieRequestFunction;
-import com.kapresoft.demo.fn.FindSongRequestFunction;
-import com.kapresoft.demo.pojo.dto.FindMovieRequest;
-import com.kapresoft.demo.pojo.dto.FindSongRequest;
-import com.kapresoft.demo.pojo.dto.MovieInfoResponse;
-import com.kapresoft.demo.pojo.dto.SongInfoResponse;
+
+import com.expedia.demo.pojo.dto.MovieInfoResponse;
+import com.expedia.demo.pojo.dto.SongInfoResponse;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;

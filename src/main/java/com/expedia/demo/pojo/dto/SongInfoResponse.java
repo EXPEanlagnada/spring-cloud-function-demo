@@ -1,4 +1,4 @@
-package com.kapresoft.demo.pojo.dto;
+package com.expedia.demo.pojo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

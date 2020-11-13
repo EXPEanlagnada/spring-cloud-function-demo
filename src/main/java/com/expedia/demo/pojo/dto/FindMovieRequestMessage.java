@@ -1,4 +1,4 @@
-package com.kapresoft.demo.pojo.dto;
+package com.expedia.demo.pojo.dto;
 
 import org.springframework.messaging.support.GenericMessage;
 

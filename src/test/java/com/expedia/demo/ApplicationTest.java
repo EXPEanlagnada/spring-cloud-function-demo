@@ -1,8 +1,8 @@
-package com.kapresoft.demo;
+package com.expedia.demo;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.pojo.dto.FindMovieRequest;
+import com.expedia.demo.pojo.dto.FindMovieRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

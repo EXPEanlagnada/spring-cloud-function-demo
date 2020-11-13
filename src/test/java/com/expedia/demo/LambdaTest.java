@@ -1,13 +1,16 @@
-package com.kapresoft.demo;
+package com.expedia.demo;
+
+import com.expedia.demo.fn.FindMovieRequestFunction;
+import com.expedia.demo.fn.FindSongRequestFunction;
 
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.fn.FindMovieRequestFunction;
-import com.kapresoft.demo.pojo.dto.MovieInfoResponse;
-import com.kapresoft.demo.pojo.dto.SongInfoResponse;
+
+import com.expedia.demo.pojo.dto.MovieInfoResponse;
+import com.expedia.demo.pojo.dto.SongInfoResponse;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -19,14 +22,11 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import static com.kapresoft.demo.fn.FindMovieRequestFunction.INIGO_MONTOYA_CHARACTER;
-import static com.kapresoft.demo.fn.FindSongRequestFunction.LYRIC;
-import static com.kapresoft.demo.fn.FindSongRequestFunction.WE_ARE_THE_WORLD_SONG;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Define Env Vars:
- * MAIN_CLASS=com.kapresoft.demo.Application
+ * MAIN_CLASS=com.expedia.demo.Application
  * FUNCTION_NAME=findMovie or findSong
  */
 @Slf4j
@@ -58,7 +58,7 @@ class LambdaTest {
         assertThat(response).as("Response")
                 .isNotNull();
         assertThat(response.getCharacterName()).as("CharacterName")
-                .isEqualTo(INIGO_MONTOYA_CHARACTER);
+                .isEqualTo(FindMovieRequestFunction.INIGO_MONTOYA_CHARACTER);
         assertThat(response.getMovieName()).as("Movie Name")
                 .isEqualTo(FindMovieRequestFunction.THE_PRINCESS_PRIDE_MOVIE);
     }
@@ -79,8 +79,8 @@ class LambdaTest {
         assertThat(response).as("Response")
                 .isNotNull();
         assertThat(response.getSong())
-                .isEqualTo(WE_ARE_THE_WORLD_SONG);
-        assertThat(response.getRequest()).isEqualTo(LYRIC);
+                .isEqualTo(FindSongRequestFunction.WE_ARE_THE_WORLD_SONG);
+        assertThat(response.getRequest()).isEqualTo(FindSongRequestFunction.LYRIC);
     }
 
     private Lambda createLambda(String functionName) {

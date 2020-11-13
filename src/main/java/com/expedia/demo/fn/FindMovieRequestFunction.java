@@ -1,11 +1,11 @@
-package com.kapresoft.demo.fn;
+package com.expedia.demo.fn;
 
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 
-import com.kapresoft.demo.pojo.dto.FindMovieRequest;
-import com.kapresoft.demo.pojo.dto.MovieInfoResponse;
-import com.kapresoft.demo.service.RequestUtil;
+import com.expedia.demo.pojo.dto.FindMovieRequest;
+import com.expedia.demo.pojo.dto.MovieInfoResponse;
+import com.expedia.demo.service.RequestUtil;
 
 import java.util.function.Function;
 

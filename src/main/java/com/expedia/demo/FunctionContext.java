@@ -1,4 +1,4 @@
-package com.kapresoft.demo;
+package com.expedia.demo;
 
 import lombok.Builder;
 import lombok.Value;

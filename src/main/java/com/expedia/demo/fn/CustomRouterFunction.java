@@ -1,15 +1,15 @@
-package com.kapresoft.demo.fn;
+package com.expedia.demo.fn;
 
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapresoft.demo.FunctionContext;
-import com.kapresoft.demo.pojo.dto.FindMovieRequest;
-import com.kapresoft.demo.pojo.dto.FindSongRequest;
-import com.kapresoft.demo.pojo.dto.MovieInfoResponse;
-import com.kapresoft.demo.pojo.dto.SongInfoResponse;
+import com.expedia.demo.FunctionContext;
+import com.expedia.demo.pojo.dto.FindMovieRequest;
+import com.expedia.demo.pojo.dto.FindSongRequest;
+import com.expedia.demo.pojo.dto.MovieInfoResponse;
+import com.expedia.demo.pojo.dto.SongInfoResponse;
 
 import org.springframework.cloud.function.context.FunctionCatalog;
 import org.springframework.cloud.function.context.catalog.BeanFactoryAwareFunctionRegistry;
